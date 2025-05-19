@@ -1,51 +1,75 @@
-# Breast Cancer Classification with Neural Network
+# 🧠 Breast Cancer Classification using Neural Networks
 
-This project implements a neural network model for breast cancer classification using patient data. The model is trained on a dataset containing features extracted from breast tissue samples and classifies them as **benign** or **malignant**.
+A deep learning solution for classifying breast tumors as **benign** or **malignant** based on diagnostic features.
+This model is built with **TensorFlow/Keras** and trained on a structured dataset of breast tissue measurements.
 
-##  Features
-- Uses **TensorFlow/Keras** to build a deep learning model.
-- Implements **data preprocessing**, including encoding categorical labels and feature scaling.
-- Handles **class imbalance** using computed class weights.
-- Evaluates performance across different **batch sizes** (16, 32, 64).
-- Saves trained models for each batch size.
+---
 
-##  Installation
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/breast-cancer-classification.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd breast-cancer-classification
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 📌 Overview
 
-##  Dataset
-- The dataset used in this project should be a CSV file (`breast_cancer.csv`).
-- It should include numerical features and a target label (`label` column).
-- Labels: `0 = Benign`, `1 = Malignant`
+This project aims to support early breast cancer diagnosis through automated classification.
+It uses a **feedforward neural network** trained on labeled clinical data and includes strategies to deal with class imbalance and improve generalization.
 
-##  How to Run
-1. Ensure the dataset (`breast_cancer.csv`) is placed in the project directory.
-2. Run the script:
-   ```bash
-   python breast_cancer_with_nn.py
-   ```
+---
 
-##  Results
-- The script trains a **feedforward neural network** and evaluates accuracy on a test set.
-- It visualizes **training accuracy** and **loss curves**.
-- Final models are saved as `.h5` files.
+## 🧰 Features
 
-##  Model Architecture
-- **Input Layer**: Number of features in the dataset
-- **Hidden Layers**:
-  - Dense (32 neurons, ReLU activation)
-  - Dropout (0.3)
-  - Dense (16 neurons, ReLU activation)
-  - Dropout (0.2)
-- **Output Layer**: Dense (1 neuron, Sigmoid activation)
+✅ Built using **TensorFlow/Keras**
+✅ Handles **class imbalance** using computed class weights
+✅ Includes **feature scaling** and **label encoding**
+✅ Trains and compares models across multiple **batch sizes**: `16`, `32`, `64`
+✅ Saves each trained model as `.h5` files
+✅ Plots **training accuracy** and **loss curves**
 
+---
+
+## 📊 Dataset
+
+* Input: CSV file (`breast_cancer.csv`)
+* Features: Numerical clinical features
+* Target: `label` column
+
+  * `0 = Benign`
+  * `1 = Malignant`
+
+---
+
+## 🧬 Model Architecture
+
+```
+Input Layer → Dense(32, ReLU) → Dropout(0.3)
+           → Dense(16, ReLU) → Dropout(0.2)
+           → Output: Dense(1, Sigmoid)
+```
+
+---
+
+## 📈 Training & Evaluation
+
+During training, the model tracks both accuracy and loss, and saves visualizations like:
+
+### 🟦 Accuracy Curve
+
+![Accuracy Plot](assets/accuracy_plot.png)
+
+### 🟥 Loss Curve
+
+![Loss Plot](assets/loss_plot.png)
+
+---
+
+## 💾 Output
+
+* Trained models saved in `.h5` format
+* Performance evaluation with accuracy and loss metrics
+
+---
+
+## 👨‍💻 Technologies Used
+
+* Python 🐍
+* TensorFlow / Keras 🧠
+* NumPy 📐
+* Pandas 🐼
+* Scikit-learn 📊
+* Matplotlib / Seaborn 📈
