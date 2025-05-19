@@ -3,14 +3,12 @@
 A deep learning solution for classifying breast tumors as **benign** or **malignant** based on diagnostic features.
 This model is built with **TensorFlow/Keras** and trained on a structured dataset of breast tissue measurements.
 
----
 
 ## 📌 Overview
 
 This project aims to support early breast cancer diagnosis through automated classification.
 It uses a **feedforward neural network** trained on labeled clinical data and includes strategies to deal with class imbalance and improve generalization.
 
----
 
 ## 🧰 Features
 
@@ -21,7 +19,7 @@ It uses a **feedforward neural network** trained on labeled clinical data and in
 - ✅ Saves each trained model as `.h5` files
 - ✅ Plots **training accuracy** and **loss curves**
 
----
+
 
 ## 📊 Dataset
 
@@ -32,7 +30,7 @@ It uses a **feedforward neural network** trained on labeled clinical data and in
   * `0 = Benign`
   * `1 = Malignant`
 
----
+
 
 ## 🧬 Model Architecture
 
@@ -42,7 +40,6 @@ Input Layer → Dense(32, ReLU) → Dropout(0.3)
            → Output: Dense(1, Sigmoid)
 ```
 
----
 
 ## 📈 Training & Evaluation
 
@@ -56,14 +53,12 @@ During training, the model tracks both accuracy and loss, and saves visualizatio
 
 ![Loss Plot](assets/loss_plot.png)
 
----
 
 ## 💾 Output
 
 * Trained models saved in `.h5` format
 * Performance evaluation with accuracy and loss metrics
 
----
 
 ## 👨‍💻 Technologies Used
 
