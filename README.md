@@ -14,8 +14,8 @@ It uses a **feedforward neural network** trained on labeled clinical data and in
 
 ## 🧰 Features
 
-✅ Built using **TensorFlow/Keras**
-✅ Handles **class imbalance** using computed class weights
+- ✅ Built using **TensorFlow/Keras**
+- ✅ Handles **class imbalance** using computed class weights
 ✅ Includes **feature scaling** and **label encoding**
 ✅ Trains and compares models across multiple **batch sizes**: `16`, `32`, `64`
 ✅ Saves each trained model as `.h5` files
